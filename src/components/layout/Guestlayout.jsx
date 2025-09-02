@@ -5,7 +5,7 @@ export default function GuestLayout({ children }) {
   return (
     <>
       <Navbar />
-        <div className="space-y-32 px-12 min-h-screen">{children}</div>
+        <div className="space-y-32 md:px-12 px-5 min-h-screen">{children}</div>
       <Footer />
     </>
   );

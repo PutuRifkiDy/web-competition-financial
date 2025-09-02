@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <>
       {/* untuk laptop */}
-      <div className="hidden lg:flex flex-row items-center justify-between bg-white shadow-sm px-12 py-4 z-50">
+      <div className="hidden lg:flex fixed top-0 left-0 right-0 flex-row items-center justify-between bg-white shadow-sm px-12 py-4 z-50">
         {/* icon jago uang */}
         <Link
           to={"/"}
@@ -124,22 +124,33 @@ export default function Navbar() {
         </Link>
         {/* end jagonya udang */}
 
-        <DropdownMenu open={openDropdown} onOpenChange={setOpenDropdown}>
-          <DropdownMenuTrigger asChild>
-            <Bars3Icon className="w-6 h-6 text-gray-500 cursor-pointer" />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-full max-w-xs">
-            <div className="flex flex-col gap-3 px-2 py-3">
+        {openNavInMobile == true ? (
+          <XMarkIcon
+            className="w-6 h-6 text-gray-500 cursor-pointer"
+            onClick={handleOpenNavInMobile}
+          />
+        ) : (
+          <Bars3Icon
+            className="w-6 h-6 text-gray-500 cursor-pointer"
+            onClick={handleOpenNavInMobile}
+          />
+        )}
+
+        {openNavInMobile == true && (
+          <div className="z-50 absolute left-0 right-0 top-14 mt-2 bg-white rounded-b-lg">
+            <div className="flex flex-col gap-2 px-4 py-4">
               <Link
                 to={"/"}
                 className={`${
                   window.location.pathname == "/"
                     ? "text-[#471CFF] bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-300 ease-in-out"
                     : "text-gray-600"
-                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-500 ease-in-out flex gap-2 items-center w-full`}
+                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-500 ease-in-out`}
               >
-                <HomeIcon className="w-5 h-5 shrink-0" />
-                Beranda
+                <div className="flex items-center gap-3">
+                  <HomeIcon className="w-5 h-5 shrink-0" />
+                  <span>Beranda</span>
+                </div>
               </Link>
 
               <Link
@@ -148,18 +159,22 @@ export default function Navbar() {
                   window.location.pathname == "/blog"
                     ? "text-[#471CFF] bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-300 ease-in-out"
                     : "text-gray-600"
-                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-400 ease-in-out flex gap-2 items-center w-full`}
+                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-400 ease-in-out`}
               >
-                <BookOpenIcon className="w-5 h-5 shrink-0" />
-                Blog
+                <div className="flex items-center gap-3">
+                  <BookOpenIcon className="w-5 h-5 shrink-0" />
+                  <span>Blog</span>
+                </div>
               </Link>
 
               <Link
                 to={"#testimonial"}
-                className={`hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-300 ease-in-out text-gray-600 flex gap-2 items-center w-full`}
+                className={`hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
               >
-                <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
-                Testimonial
+                <div className="flex items-center gap-3">
+                  <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
+                  <span>Testimonial</span>
+                </div>
               </Link>
 
               <Link
@@ -168,21 +183,23 @@ export default function Navbar() {
                   window.location.pathname == "/rute-keuangan"
                     ? "text-[#471CFF] bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-300 ease-in-out"
                     : "text-gray-600"
-                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-400 ease-in-out flex gap-2 items-center w-full`}
+                } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-400 ease-in-out`}
               >
-                <MapIcon className="w-5 h-5 shrink-0" />
-                Rute Keuangan
+                <div className="flex items-center gap-3">
+                  <MapIcon className="w-5 h-5 shrink-0" />
+                  <span>Rute Keuangan</span>
+                </div>
               </Link>
 
               <Button
                 variant="primary"
-                className="shadow-md hover:bg-[#471CFF]/70 w-full"
+                className="shadow-md hover:bg-[#471CFF]/70 w-full mt-2"
               >
                 Daftar
               </Button>
             </div>
-          </DropdownMenuContent>
-        </DropdownMenu>
+          </div>
+        )}
       </div>
 
       {/* untuk mobile */}
