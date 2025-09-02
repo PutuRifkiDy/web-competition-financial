@@ -2,6 +2,7 @@ import { ArrowRightIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
@@ -41,34 +42,28 @@ export default function Footer() {
 
           <div className="flex flex-col gap-5">
             <p className="text-lg font-medium">Navigasi</p>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-gray-600 flex flex-row items-center gap-1 group"
             >
               Beranda
               <ChevronRightIcon className="w-4 h-4 shrink-0 text-gray-600 transform transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/rute-keuangan"
               className="text-gray-600 flex flex-row items-center gap-1 group"
             >
               Rute Keuangan
               <ChevronRightIcon className="w-4 h-4 shrink-0 text-gray-600 transform transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/blog"
               className="text-gray-600 flex flex-row items-center gap-1 group"
             >
               Blog
               <ChevronRightIcon className="w-4 h-4 shrink-0 text-gray-600 transform transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 flex flex-row items-center gap-1 group"
-            >
-              Testimonial
-              <ChevronRightIcon className="w-4 h-4 shrink-0 text-gray-600 transform transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            </Link>
+           
           </div>
 
           <div className="flex flex-col gap-5">

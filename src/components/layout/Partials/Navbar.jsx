@@ -80,7 +80,7 @@ export default function Navbar() {
           </Link>
 
           <a
-            href={"#testimonial"}
+            href={`${window.location.origin}/#testimonial`}
             className={`hover:bg-[#471CFF]/10 block px-3 py-2 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
           >
             <div className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export default function Navbar() {
               </Link>
 
               <a
-                href={"#testimonial"}
+                href={`${window.location.origin}/#testimonial`}
                 className={`hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
               >
                 <div className="flex items-center gap-3">
@@ -262,7 +262,7 @@ export default function Navbar() {
               </Link>
 
               <a
-                href={"#testimonial"}
+                href={`${window.location.origin}/#testimonial`}
                 className={`hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
               >
                 <div className="flex items-center gap-3">
