@@ -1,13 +1,23 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import BlogPage from "./pages/BlogPage";
+import RuteKeuangan from "./pages/RuteKeuangan";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LandingPage />,
+  },
+  {
+    path: "/blog",
+    element: <BlogPage />,
+  },
+  {
+    path: "/rute-keuangan",
+    element: <RuteKeuangan />,
   },
 ]);
 
