@@ -84,7 +84,7 @@ export default function LandingPage() {
                 <div className="w-2 h-2 font-medium rounded-full bg-[#471CFF]"></div>
                 <p className="font-medium">JagonyaUang Ada untuk Kamu</p>
               </div>
-              <p className="text-gray-600 md:max-w-xl max-w-full">
+              <p className="text-gray-600 md:max-w-xl max-w-full text-lg">
                 JagonyaUang hadir sebagai sahabat finansialmu. Kami percaya
                 kalau setiap orang bisa mengatur uang dengan cara yang lebih
                 simpel, menyenangkan, dan sesuai dengan tujuan hidup
@@ -151,7 +151,7 @@ export default function LandingPage() {
                 <div className="w-2 h-2 rounded-full bg-[#471CFF]"></div>
                 <p className="font-medium">Artikel Finansial</p>
               </div>
-              <p className="text-gray-600 md:max-w-xl max-w-full">
+              <p className="text-gray-600 md:max-w-xl max-w-full text-lg">
                 Perluas wawasanmu dengan artikel-artikel edukatif tentang
                 budgeting, investasi, dan strategi mengelola keuangan pribadi.
               </p>
@@ -325,6 +325,244 @@ export default function LandingPage() {
             </div>
           </section>
           {/* end blog section */}
+
+          {/* start testimoni */}
+          <section className="mt-24 flex flex-col gap-5">
+            <div className="flex flex-col gap-2 justify-center items-center w-full text-center">
+              <p className="font-bold text-3xl">
+                Cerita Mereka yang Sudah{" "}
+                <span className="text-[#471CFF]">Terdampak</span>
+              </p>
+              <p className="text-gray-600 md:max-w-xl max-w-full text-lg">
+                Pengguna JagonyaUang bercerita tentang bagaimana mereka mengubah
+                cara mengelola keuangan. Dari yang awalnya bingung mengatur cash
+                flow, sampai berhasil punya dana darurat dan tabungan rutin.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {/* card 1 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 1 */}
+              {/* card 2 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 2 */}
+              {/* card 3 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 3 */}
+              {/* card 4 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 4 */}
+              {/* card 5 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 5 */}
+              {/* card 6 */}
+              <div className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out">
+                <div className="flex flex-row gap-3 items-center">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
+                    <img
+                      src="/assets/images/artikel/people-1.png"
+                      className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="font-medium text-md">Dian Putri</p>
+                    <p className="text-gray-600 text-sm">Founder Toko Kita</p>
+                    <div className="bg-emerald-100 py-1 px-2 rounded-md">
+                      <p className="text-xs text-emerald-600">
+                        Pengguna +6 bulan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <article className="text-sm mt-5">
+                  "Awalnya uang saku sering habis buat jajan, sampai nggak ada
+                  sisa. Setelah ikut tips budgeting di JagonyaUang, sekarang aku
+                  bisa nabung buat bayar skripsi tanpa minta tambahan orang
+                  tua."
+                </article>
+                <div className="w-full h-[2px] bg-gray-200 mt-5"></div>
+                <div className="flex flex-row justify-between mt-5">
+                  <p className="text-xs text-gray-600">
+                    Pengguna Terverifikasi
+                  </p>
+                  <p className="text-xs text-emerald-600">3 Bulan yang lalu</p>
+                </div>
+              </div>
+              {/* end card 6 */}
+            </div>
+              {/* start button selengkapnya */}
+              <div className="flex justify-center items-center mt-5">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="animate-bounce w-fit flex justify-enter items-center"
+                >
+                  Lihat Lebih Banyak Cerita
+                </Button>
+              </div>
+          </section>
         </div>
       </GuestLayout>
     </>
