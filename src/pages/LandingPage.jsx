@@ -5,10 +5,13 @@ import {
   ArrowUpRightIcon,
   BoltIcon,
   BookOpenIcon,
+  ChatBubbleLeftIcon,
   ChevronRightIcon,
   ClockIcon,
+  HeartIcon,
   HomeIcon,
 } from "@heroicons/react/24/solid";
+import { FaInstagram } from "react-icons/fa6";
 
 export default function LandingPage() {
   return (
@@ -552,17 +555,149 @@ export default function LandingPage() {
               </div>
               {/* end card 6 */}
             </div>
-              {/* start button selengkapnya */}
-              <div className="flex justify-center items-center mt-5">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="animate-bounce w-fit flex justify-enter items-center"
-                >
-                  Lihat Lebih Banyak Cerita
-                </Button>
-              </div>
+            {/* start lebih banyak cerita button*/}
+            <div className="flex justify-center items-center mt-5">
+              <Button
+                variant="primary"
+                size="lg"
+                className="animate-bounce w-fit flex justify-enter items-center"
+              >
+                Lihat Lebih Banyak Cerita
+              </Button>
+            </div>
           </section>
+          {/* end testimonial section */}
+
+          {/* start stalking ig */}
+          <section className="mt-24 flex flex-col gap-5">
+            <div className="flex flex-col gap-2 justify-center items-center w-full text-center">
+              <div className="flex flex-row gap-2 items-center bg-[#471CFF]/10 rounded-lg py-2 px-3 text-[#471CFF]">
+                <FaInstagram size={24} />
+                <p className="font-medium">@JagonyaUang</p>
+              </div>
+              <p className="font-bold text-3xl">
+                <span className="text-[#471CFF]">Ikuti</span> Konten Keuangan
+                Seru di Instagram!{" "}
+              </p>
+              <p className="text-gray-600 md:max-w-xl max-w-full text-lg">
+                Dapatkan tips finansial singkat, insight ringan, sampai meme
+                lucu soal duit yang bikin belajar keuangan jadi lebih fun.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {/* card 1 */}
+              <div className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px]">
+                <img
+                  src="assets/images/artikel/article-1.jpg"
+                  className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out "
+                  alt=""
+                />
+                {/* gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-600/50 to-gray-600/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 px-5 py-5">
+                    <p className="text-white font-bold text-md">
+                      Financial Talk, Indepenent Financial dan Hubungan
+                    </p>
+                    <div className="flex flex-row gap-3">
+                      <div className="flex flex-row gap-2 items-center">
+                        <HeartIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">1.8</p>
+                      </div>
+                      <div className="flex flex-row gap-2 items-center">
+                        <ChatBubbleLeftIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">148</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* end card 1 */}
+              {/* card 2 */}
+              <div className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px] ">
+                <img
+                  src="assets/images/artikel/article-1.jpg"
+                  className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out "
+                  alt=""
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-600/50 to-gray-600/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 px-5 py-5">
+                    <p className="text-white font-bold text-md">
+                      Financial Talk, Indepenent Financial dan Hubungan
+                    </p>
+                    <div className="flex flex-row gap-3">
+                      <div className="flex flex-row gap-2 items-center">
+                        <HeartIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">1.8</p>
+                      </div>
+                      <div className="flex flex-row gap-2 items-center">
+                        <ChatBubbleLeftIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">148</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* end card 2 */}
+              {/* card 3 */}
+              <div className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px] ">
+                <img
+                  src="assets/images/artikel/article-1.jpg"
+                  className="w-full object-cover object-center hover:scale-110 transition-all duration-300 ease-in-out "
+                  alt=""
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-600/50 to-gray-600/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 px-5 py-5">
+                    <p className="text-white font-bold text-md">
+                      Financial Talk, Indepenent Financial dan Hubungan
+                    </p>
+                    <div className="flex flex-row gap-3">
+                      <div className="flex flex-row gap-2 items-center">
+                        <HeartIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">1.8</p>
+                      </div>
+                      <div className="flex flex-row gap-2 items-center">
+                        <ChatBubbleLeftIcon className="w-4 h-4 text-white font-bold" />
+                        <p className="text-sm text-white font-bold">148</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* end card 3 */}
+            </div>
+            {/* start lebih banyak cerita button*/}
+            <div className="flex justify-center items-center mt-5">
+              <Button
+                variant="primary"
+                size="lg"
+                className="animate-bounce w-fit flex justify-enter items-center"
+              >
+                Yuk Follow Instagram Kami!
+              </Button>
+            </div>
+          </section>
+          {/* end stalking ig */}
+
+          {/* start feedback */}
+          <div className="flex flex-col justify-center items-center bg-[#471cff]/10 p-10 mt-24 mb-24 rounded-lg">
+            <ChatBubbleLeftIcon className="w-20 h-20 text-[#471CFF] font-bold" />
+            <p className="text-xl font-bold">
+              Bantu Kami Untuk Menjadi Lebih Baik, Terima Kasih
+            </p>
+            <p className="text-md text-gray-600 max-w-xl text-center mt-5">
+              Masukan Anda sangat berarti bagi kami. Ceritakan pengalaman dan
+              saran Anda agar JagonyaUang dapat terus berkembang dan memberikan
+              manfaat yang lebih baik.{" "}
+            </p>
+            <Button variant="primary" size="lg" className="mt-5 items-center flex justify-center group">
+              Berikan Feedback
+              <ChevronRightIcon className="w-5 h-5 transform group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
+            </Button>
+          </div>
+          {/* end feedback */}
         </div>
       </GuestLayout>
     </>
