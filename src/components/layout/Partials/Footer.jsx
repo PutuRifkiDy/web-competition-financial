@@ -15,7 +15,7 @@ export default function Footer() {
                 <p className="text-white">J</p>
               </div>
               <div className="flex flex-col justify-center">
-                <p className="text-xl font-medium">JagonyaUang</p>
+                <p className="text-xl font-bold">JagonyaUang</p>
                 <p className="text-sm text-[#471CFF]">By Rifki</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Footer() {
         <div className="w-full bg-gray-300 h-[2px]"></div>
 
         <div className="flex flex-row items-center justify-between pt-5">
-          <p className="text-gray-600">Copyright ©2025 JagonyaUang</p>
+          <p className="text-gray-600">Copyright &copy; 2025 JagonyaUang</p>
           <p className="text-gray-600">Platform edukasi finansial</p>
         </div>
       </footer>

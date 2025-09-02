@@ -5,6 +5,7 @@ import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import BlogPage from "./pages/BlogPage";
 import RuteKeuangan from "./pages/RuteKeuangan";
+import DetailBlogPage from "./pages/DetailBlogPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "/rute-keuangan",
     element: <RuteKeuangan />,
   },
+  {
+    path: "/detail-blog",
+    element: <DetailBlogPage />,
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

@@ -48,7 +48,7 @@ export default function Navbar() {
             <p className="text-white">J</p>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="text-xl font-medium">JagonyaUang</p>
+            <p className="text-xl font-bold">JagonyaUang</p>
             <p className="text-sm text-[#471CFF]">By Rifki</p>
           </div>
         </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
             } text-[15px] hover:text-[#471CFF] hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-400 ease-in-out flex gap-2 items-center`}
           >
             <BookOpenIcon className="w-5 h-5 shrink-0" />
-            Blog
+            Artikel
           </Link>
 
           <a
@@ -103,8 +103,8 @@ export default function Navbar() {
 
           <div className="h-10 w-1 bg-gray-300"></div>
 
-          <Button variant="primary" className="shadow-md hover:bg-[#471CFF]/70">
-            Daftar
+          <Button variant="primary" className="shadow-md hover:bg-[#471CFF]">
+            Masuk
           </Button>
         </div>
       </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
             <p className="text-white">J</p>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="text-xl font-medium">JagonyaUang</p>
+            <p className="text-xl font-bold">JagonyaUang</p>
             <p className="text-sm text-[#471CFF]">By Rifki</p>
           </div>
         </Link>
@@ -165,7 +165,7 @@ export default function Navbar() {
               >
                 <div className="flex items-center gap-3">
                   <BookOpenIcon className="w-5 h-5 shrink-0" />
-                  <span>Blog</span>
+                  <span>Artikel</span>
                 </div>
               </Link>
 
@@ -197,7 +197,7 @@ export default function Navbar() {
                 variant="primary"
                 className="shadow-md hover:bg-[#471CFF]/70 w-full mt-2"
               >
-                Daftar
+                Masuk
               </Button>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function Navbar() {
             <p className="text-white">J</p>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="text-lg font-medium">JagonyaUang</p>
+            <p className="text-lg font-bold">JagonyaUang</p>
             <p className="text-sm text-[#471CFF]">By Rifki</p>
           </div>
         </Link>
@@ -257,7 +257,7 @@ export default function Navbar() {
               >
                 <div className="flex items-center gap-3">
                   <BookOpenIcon className="w-5 h-5 shrink-0" />
-                  <span>Blog</span>
+                  <span>Artikel</span>
                 </div>
               </Link>
 
@@ -289,7 +289,7 @@ export default function Navbar() {
                 variant="primary"
                 className="shadow-md hover:bg-[#471CFF]/70 w-full mt-2"
               >
-                Daftar
+                Masuk
               </Button>
             </div>
           </div>

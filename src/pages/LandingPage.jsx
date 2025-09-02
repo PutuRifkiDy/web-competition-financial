@@ -38,7 +38,8 @@ export default function LandingPage() {
               <h1
                 className="text-4xl sm:text-2xl md:text-4xl lg:text-6xl font-bold text-gray-900 text-balance"
                 data-aos="fade-left"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 Apakah kamu <br />
                 <span className="text-[#471CFF] inline-block lg:min-h-[2em] md:min-h-[2.5em] min-h-[2.5em]">
@@ -62,7 +63,8 @@ export default function LandingPage() {
               <p
                 className="text-gray-600 max-w-xl sm:text-sm md:text-sm lg:text-lg"
                 data-aos="fade-left"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 JagonyaUang hadir sebagai platform edukasi finansial yang
                 membantu kamu memahami, mengelola, dan merencanakan keuangan
@@ -74,23 +76,28 @@ export default function LandingPage() {
                 className="flex md:flex-row flex-col gap-5"
                 data-aos="fade-left"
                 data-aos-duration="800"
+                data-aos-delay="600"
               >
-                <Button
-                  variant="primary"
-                  className="flex flex-row items-center gap-2"
-                  size="lg"
-                >
-                  Coba tools kami
-                  <ArrowUpRightIcon className="w-4 h-4" />
-                </Button>
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="bg-white border-2 border-[#471CFF] rounded-md text-[#471CFF] flex flex-row items-center gap-2 hover:bg-[#471CFF] hover:text-white transition-all duration-300 ease-in-out group"
-                >
-                  Rute Keuangan
-                  <ChevronRightIcon className="w-4 h-4 transform group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
-                </Button>
+                <Link to={"/blog"}>
+                  <Button
+                    variant="primary"
+                    className="flex flex-row items-center gap-2"
+                    size="lg"
+                  >
+                    Lihat Artikel Edukatif
+                    <ArrowUpRightIcon className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link to="/rute-keuangan">
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="bg-white border-2 border-[#471CFF] rounded-md text-[#471CFF] flex flex-row items-center gap-2 hover:bg-[#471CFF] hover:text-white transition-all duration-300 ease-in-out group shadow-none"
+                  >
+                    Rute Keuangan
+                    <ChevronRightIcon className="w-4 h-4 transform group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -113,7 +120,8 @@ export default function LandingPage() {
               <div
                 className="flex flex-row gap-2 items-center bg-[#471CFF]/10 rounded-lg py-2 px-3 text-[#471CFF]"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="w-2 h-2 font-medium rounded-full bg-[#471CFF]"></div>
                 <p className="font-medium">JagonyaUang Ada untuk Kamu</p>
@@ -121,7 +129,8 @@ export default function LandingPage() {
               <p
                 className="text-gray-600 md:max-w-xl max-w-full text-lg"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 JagonyaUang hadir sebagai sahabat finansialmu. Kami percaya
                 kalau setiap orang bisa mengatur uang dengan cara yang lebih
@@ -134,7 +143,8 @@ export default function LandingPage() {
               <div
                 className="flex flex-col gap-3 rounded-xl border-2 border-gray-200 p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out group"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="flex justify-center items-center bg-emerald-100 p-3 w-fit rounded-lg">
                   <BoltIcon className="w-8 h-8 text-emerald-600" />
@@ -154,7 +164,8 @@ export default function LandingPage() {
               <div
                 className="flex flex-col gap-3 rounded-xl border-2 border-gray-200 p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out group"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 <div className="flex justify-center items-center  bg-[#471CFF]/20 p-3 w-fit rounded-lg">
                   <HomeIcon className="w-8 h-8 text-[#471CFF]" />
@@ -175,6 +186,7 @@ export default function LandingPage() {
                 className="flex flex-col gap-3 rounded-xl border-2 border-gray-200 p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out group"
                 data-aos="fade-up"
                 data-aos-duration="800"
+                data-aos-delay="600"
               >
                 <div className="flex justify-center items-center  bg-[#933cf7]/20 p-3 w-fit rounded-lg">
                   <BookOpenIcon className="w-8 h-8 text-[#933cf7]" />
@@ -200,7 +212,8 @@ export default function LandingPage() {
               <div
                 className="flex flex-row gap-2 items-center bg-[#471CFF]/10 rounded-lg py-2 px-3 text-[#471CFF]"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="w-2 h-2 rounded-full bg-[#471CFF]"></div>
                 <p className="font-medium">Artikel Finansial</p>
@@ -208,7 +221,8 @@ export default function LandingPage() {
               <p
                 className="text-gray-600 md:max-w-xl max-w-full text-lg"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 Perluas wawasanmu dengan artikel-artikel edukatif tentang
                 budgeting, investasi, dan strategi mengelola keuangan pribadi.
@@ -218,10 +232,11 @@ export default function LandingPage() {
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
               {/* card 1 */}
               <Link
-                to={"/blog"}
+                to={"/detail-blog"}
                 className="flex flex-col"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[240px]">
                   <img
@@ -274,10 +289,11 @@ export default function LandingPage() {
               {/* End Card 1 */}
               {/* card 2 */}
               <Link
-                to={"/blog"}
+                to={"/detail-blog"}
                 className="flex flex-col"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 <div className="overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[240px]">
                   <img
@@ -330,10 +346,11 @@ export default function LandingPage() {
               {/* End Card 2 */}
               {/* card 3 */}
               <Link
-                to={"/blog"}
+                to={"/detail-blog"}
                 className="flex flex-col"
                 data-aos="fade-up"
                 data-aos-duration="800"
+                data-aos-delay="600"
               >
                 <div className="overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[240px]">
                   <img
@@ -390,7 +407,8 @@ export default function LandingPage() {
             <div
               className="flex justify-center items-center mt-5"
               data-aos="fade-up"
-              data-aos-duration="400"
+              data-aos-duration="800"
+              data-aos-delay="200"
             >
               <Link to={"/blog"}>
                 <Button
@@ -412,7 +430,8 @@ export default function LandingPage() {
               <p
                 className="font-bold text-3xl"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 Cerita Mereka yang Sudah{" "}
                 <span className="text-[#471CFF]">Terdampak</span>
@@ -421,6 +440,7 @@ export default function LandingPage() {
                 className="text-gray-600 md:max-w-xl max-w-full text-lg"
                 data-aos="fade-up"
                 data-aos-duration="600"
+                data-aos-delay="400"
               >
                 Pengguna JagonyaUang bercerita tentang bagaimana mereka mengubah
                 cara mengelola keuangan. Dari yang awalnya bingung mengatur cash
@@ -433,7 +453,8 @@ export default function LandingPage() {
               <div
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -472,7 +493,8 @@ export default function LandingPage() {
               <div
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -512,6 +534,7 @@ export default function LandingPage() {
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
                 data-aos-duration="800"
+                data-aos-delay="600"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -550,7 +573,8 @@ export default function LandingPage() {
               <div
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -589,7 +613,8 @@ export default function LandingPage() {
               <div
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -629,6 +654,7 @@ export default function LandingPage() {
                 className="bg-white rounded-lg shadow-sm border-2 border-gray-100 flex flex-col p-5 hover:-translate-y-3 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
                 data-aos-duration="800"
+                data-aos-delay="800"
               >
                 <div className="flex flex-row gap-3 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-200">
@@ -668,7 +694,8 @@ export default function LandingPage() {
             <div
               className="flex justify-center items-center mt-5"
               data-aos="fade-up"
-              data-aos-duration="400"
+              data-aos-duration="800"
+              data-aos-delay="200"
             >
               <Button
                 variant="primary"
@@ -688,7 +715,7 @@ export default function LandingPage() {
               <div
                 className="flex flex-row gap-2 items-center bg-[#471CFF]/10 rounded-lg py-2 px-3 text-[#471CFF]"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
               >
                 <FaInstagram size={24} />
                 <p className="font-medium">@JagonyaUang</p>
@@ -696,7 +723,7 @@ export default function LandingPage() {
               <p
                 className="font-bold text-3xl"
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
               >
                 <span className="text-[#471CFF]">Ikuti</span> Konten Keuangan
                 Seru di Instagram!{" "}
@@ -704,7 +731,7 @@ export default function LandingPage() {
               <p
                 className="text-gray-600 md:max-w-xl max-w-full text-lg"
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
               >
                 Dapatkan tips finansial singkat, insight ringan, sampai meme
                 lucu soal duit yang bikin belajar keuangan jadi lebih fun.
@@ -716,7 +743,8 @@ export default function LandingPage() {
               <div
                 className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px]"
                 data-aos="fade-up"
-                data-aos-duration="200"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <img
                   src="assets/images/artikel/article-1.jpg"
@@ -747,7 +775,8 @@ export default function LandingPage() {
               <div
                 className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px] "
                 data-aos="fade-up"
-                data-aos-duration="400"
+                data-aos-duration="800"
+                data-aos-delay="400"
               >
                 <img
                   src="assets/images/artikel/article-1.jpg"
@@ -778,7 +807,8 @@ export default function LandingPage() {
               <div
                 className="relative overflow-hidden rounded-xl w-full sm:h-auto md:h-[200px] lg:h-[200px] "
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="800"
+                data-aos-delay="600"
               >
                 <img
                   src="assets/images/artikel/article-1.jpg"
@@ -810,7 +840,8 @@ export default function LandingPage() {
             <div
               className="flex justify-center items-center mt-5"
               data-aos="fade-up"
-              data-aos-duration="200"
+              data-aos-duration="800"
+              data-aos-delay="200"
             >
               <Button
                 variant="primary"
