@@ -8,8 +8,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				rubik: [
-					'Rubik',
+				inter: [
+					'Inter',
 					'sans-serif'
 				]
 			},
