@@ -79,13 +79,15 @@ export default function Navbar() {
             Blog
           </Link>
 
-          <Link
-            to={"#testimonial"}
-            className={`hover:bg-[#471CFF]/10 px-3 py-2 rounded-xl transition-all duration-300 ease-in-out text-gray-600 flex gap-2 items-center`}
+          <a
+            href={"#testimonial"}
+            className={`hover:bg-[#471CFF]/10 block px-3 py-2 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
           >
-            <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
-            Testimonial
-          </Link>
+            <div className="flex items-center gap-3">
+              <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
+              <span>Testimonial</span>
+            </div>
+          </a>
 
           <Link
             to={"/rute-keuangan"}
@@ -167,15 +169,15 @@ export default function Navbar() {
                 </div>
               </Link>
 
-              <Link
-                to={"#testimonial"}
+              <a
+                href={"#testimonial"}
                 className={`hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
               >
                 <div className="flex items-center gap-3">
                   <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
                   <span>Testimonial</span>
                 </div>
-              </Link>
+              </a>
 
               <Link
                 to={"/rute-keuangan"}
@@ -259,15 +261,15 @@ export default function Navbar() {
                 </div>
               </Link>
 
-              <Link
-                to={"#testimonial"}
+              <a
+                href={"#testimonial"}
                 className={`hover:bg-[#471CFF]/10 block px-3 py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-600`}
               >
                 <div className="flex items-center gap-3">
                   <ChatBubbleBottomCenterIcon className="w-5 h-5 shrink-0" />
                   <span>Testimonial</span>
                 </div>
-              </Link>
+              </a>
 
               <Link
                 to={"/rute-keuangan"}
